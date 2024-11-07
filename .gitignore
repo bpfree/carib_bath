@@ -4,5 +4,5 @@
 .Ruserdata
 
 # ignore data too large for analysis
-data/a_exploratoory_data/BlueTopo/UTM19/BlueTopo_BC26H26D_20240705*
-data/a_exploratoory_data/BlueTopo/UTM19/BlueTopo_BC26J26C_20240726*
+data/a_exploratoory_data/BlueTopo/UTM19/BlueTopo_BC26H26D_20240705.tiff
+data/a_exploratoory_data/BlueTopo/UTM19/BlueTopo_BC26J26C_20240726.tiff
