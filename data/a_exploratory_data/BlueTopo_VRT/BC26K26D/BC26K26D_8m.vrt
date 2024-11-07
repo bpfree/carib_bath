@@ -1,0 +1,186 @@
+<VRTDataset rasterXSize="15844" rasterYSize="12675">
+  <SRS dataAxisToSRSAxisMapping="1,2,3">COMPD_CS["NAD83 / UTM zone 20N + MSL height",PROJCS["NAD83 / UTM zone 20N",GEOGCS["NAD83",DATUM["North_American_Datum_1983",SPHEROID["GRS 1980",6378137,298.257222101,AUTHORITY["EPSG","7019"]],AUTHORITY["EPSG","6269"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4269"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",-63],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","26920"]],VERT_CS["MSL height",VERT_DATUM["Mean Sea Level",2005,AUTHORITY["EPSG","5100"]],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Gravity-related height",UP],AUTHORITY["EPSG","5714"]]]</SRS>
+  <GeoTransform>  1.8334800000000000e+05,  8.0000000000000000e+00,  0.0000000000000000e+00,  2.0924840000000000e+06,  0.0000000000000000e+00, -8.0000000000000000e+00</GeoTransform>
+  <VRTRasterBand dataType="Float32" band="1">
+    <Description>Elevation</Description>
+    <NoDataValue>nan</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K72JD_20240814.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1037" RasterYSize="3133" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="1037" ySize="3133" />
+      <DstRect xOff="10790" yOff="9500" xSize="1037" ySize="3133" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K52JF_20240814.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2995" RasterYSize="1093" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="2995" ySize="1093" />
+      <DstRect xOff="974" yOff="4171" xSize="2995" ySize="1093" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K82JD_20240814.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="4010" RasterYSize="3163" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="4010" ySize="3163" />
+      <DstRect xOff="11783" yOff="9512" xSize="4010" ySize="3163" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K62JF_20240814.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3998" RasterYSize="2140" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="3998" ySize="2140" />
+      <DstRect xOff="3929" yOff="4217" xSize="3998" ySize="2140" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K82JF_20240814.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3990" RasterYSize="2126" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="3990" ySize="2126" />
+      <DstRect xOff="11854" yOff="4323" xSize="3990" ySize="2126" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K72JF_20240814.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3994" RasterYSize="2133" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="3994" ySize="2133" />
+      <DstRect xOff="7892" yOff="4273" xSize="3994" ySize="2133" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K52JG_20240913.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="4031" RasterYSize="4225" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="4031" ySize="4225" />
+      <DstRect xOff="0" yOff="0" xSize="4031" ySize="4225" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="2">
+    <Description>Uncertainty</Description>
+    <NoDataValue>nan</NoDataValue>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K72JD_20240814.tiff</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterXSize="1037" RasterYSize="3133" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="1037" ySize="3133" />
+      <DstRect xOff="10790" yOff="9500" xSize="1037" ySize="3133" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K52JF_20240814.tiff</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterXSize="2995" RasterYSize="1093" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="2995" ySize="1093" />
+      <DstRect xOff="974" yOff="4171" xSize="2995" ySize="1093" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K82JD_20240814.tiff</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterXSize="4010" RasterYSize="3163" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="4010" ySize="3163" />
+      <DstRect xOff="11783" yOff="9512" xSize="4010" ySize="3163" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K62JF_20240814.tiff</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterXSize="3998" RasterYSize="2140" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="3998" ySize="2140" />
+      <DstRect xOff="3929" yOff="4217" xSize="3998" ySize="2140" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K82JF_20240814.tiff</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterXSize="3990" RasterYSize="2126" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="3990" ySize="2126" />
+      <DstRect xOff="11854" yOff="4323" xSize="3990" ySize="2126" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K72JF_20240814.tiff</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterXSize="3994" RasterYSize="2133" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="3994" ySize="2133" />
+      <DstRect xOff="7892" yOff="4273" xSize="3994" ySize="2133" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K52JG_20240913.tiff</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterXSize="4031" RasterYSize="4225" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="4031" ySize="4225" />
+      <DstRect xOff="0" yOff="0" xSize="4031" ySize="4225" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="3">
+    <Description>Contributor</Description>
+    <NoDataValue>nan</NoDataValue>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K72JD_20240814.tiff</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterXSize="1037" RasterYSize="3133" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="1037" ySize="3133" />
+      <DstRect xOff="10790" yOff="9500" xSize="1037" ySize="3133" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K52JF_20240814.tiff</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterXSize="2995" RasterYSize="1093" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="2995" ySize="1093" />
+      <DstRect xOff="974" yOff="4171" xSize="2995" ySize="1093" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K82JD_20240814.tiff</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterXSize="4010" RasterYSize="3163" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="4010" ySize="3163" />
+      <DstRect xOff="11783" yOff="9512" xSize="4010" ySize="3163" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K62JF_20240814.tiff</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterXSize="3998" RasterYSize="2140" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="3998" ySize="2140" />
+      <DstRect xOff="3929" yOff="4217" xSize="3998" ySize="2140" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K82JF_20240814.tiff</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterXSize="3990" RasterYSize="2126" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="3990" ySize="2126" />
+      <DstRect xOff="11854" yOff="4323" xSize="3990" ySize="2126" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K72JF_20240814.tiff</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterXSize="3994" RasterYSize="2133" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="3994" ySize="2133" />
+      <DstRect xOff="7892" yOff="4273" xSize="3994" ySize="2133" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BF2K52JG_20240913.tiff</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterXSize="4031" RasterYSize="4225" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="4031" ySize="4225" />
+      <DstRect xOff="0" yOff="0" xSize="4031" ySize="4225" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+  <OverviewList resampling="nearest">2 4 8</OverviewList>
+</VRTDataset>

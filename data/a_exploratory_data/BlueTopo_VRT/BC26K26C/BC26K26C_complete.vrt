@@ -1,0 +1,89 @@
+<VRTDataset rasterXSize="13851" rasterYSize="14412">
+  <SRS dataAxisToSRSAxisMapping="1,2,3">COMPD_CS["NAD83 / UTM zone 20N + MSL height",PROJCS["NAD83 / UTM zone 20N",GEOGCS["NAD83",DATUM["North_American_Datum_1983",SPHEROID["GRS 1980",6378137,298.257222101,AUTHORITY["EPSG","7019"]],AUTHORITY["EPSG","6269"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4269"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",-63],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","26920"]],VERT_CS["MSL height",VERT_DATUM["Mean Sea Level",2005,AUTHORITY["EPSG","5100"]],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Gravity-related height",UP],AUTHORITY["EPSG","5714"]]]</SRS>
+  <GeoTransform>  1.8016800000000000e+05,  9.3333333333333339e+00,  0.0000000000000000e+00,  1.9927900000000000e+06,  0.0000000000000000e+00, -9.3333333333333339e+00</GeoTransform>
+  <VRTRasterBand dataType="Float32" band="1">
+    <Description>Elevation</Description>
+    <NoDataValue>nan</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BC26K26C_20240809.tiff</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="8040" RasterYSize="8377" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="8040" ySize="8377" />
+      <DstRect xOff="0" yOff="51.2142857142857" xSize="13782.8571428571" ySize="14360.5714285714" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">BC26K26C_8m.vrt</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="15965" RasterYSize="8351" DataType="Float32" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="15965" ySize="8351" />
+      <DstRect xOff="166.714285714286" yOff="139.928571428571" xSize="13684.2857142857" ySize="7158" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">BC26K26C_4m.vrt</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="31825" RasterYSize="10804" DataType="Float32" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="31825" ySize="10804" />
+      <DstRect xOff="195.214285714286" yOff="0" xSize="13639.2857142857" ySize="4630.28571428571" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="2">
+    <Description>Uncertainty</Description>
+    <NoDataValue>nan</NoDataValue>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BC26K26C_20240809.tiff</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterXSize="8040" RasterYSize="8377" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="8040" ySize="8377" />
+      <DstRect xOff="0" yOff="51.2142857142857" xSize="13782.8571428571" ySize="14360.5714285714" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">BC26K26C_8m.vrt</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterXSize="15965" RasterYSize="8351" DataType="Float32" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="15965" ySize="8351" />
+      <DstRect xOff="166.714285714286" yOff="139.928571428571" xSize="13684.2857142857" ySize="7158" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">BC26K26C_4m.vrt</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterXSize="31825" RasterYSize="10804" DataType="Float32" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="31825" ySize="10804" />
+      <DstRect xOff="195.214285714286" yOff="0" xSize="13639.2857142857" ySize="4630.28571428571" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Float32" band="3">
+    <Description>Contributor</Description>
+    <NoDataValue>nan</NoDataValue>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../../BlueTopo/UTM20/BlueTopo_BC26K26C_20240809.tiff</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterXSize="8040" RasterYSize="8377" DataType="Float32" BlockXSize="512" BlockYSize="512" />
+      <SrcRect xOff="0" yOff="0" xSize="8040" ySize="8377" />
+      <DstRect xOff="0" yOff="51.2142857142857" xSize="13782.8571428571" ySize="14360.5714285714" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">BC26K26C_8m.vrt</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterXSize="15965" RasterYSize="8351" DataType="Float32" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="15965" ySize="8351" />
+      <DstRect xOff="166.714285714286" yOff="139.928571428571" xSize="13684.2857142857" ySize="7158" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">BC26K26C_4m.vrt</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterXSize="31825" RasterYSize="10804" DataType="Float32" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="31825" ySize="10804" />
+      <DstRect xOff="195.214285714286" yOff="0" xSize="13639.2857142857" ySize="4630.28571428571" />
+      <NODATA>nan</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+</VRTDataset>
