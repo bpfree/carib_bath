@@ -1,0 +1,543 @@
+<PAMDataset>
+  <PAMRasterBand band="1">
+    <Description>Elevation</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="2">
+    <Description>Uncertainty</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="3">
+    <Description>Contributor</Description>
+    <GDALRasterAttributeTable tableType="thematic">
+      <FieldDefn index="0">
+        <Name>value</Name>
+        <Type>0</Type>
+        <Usage>5</Usage>
+      </FieldDefn>
+      <FieldDefn index="1">
+        <Name>count</Name>
+        <Type>0</Type>
+        <Usage>1</Usage>
+      </FieldDefn>
+      <FieldDefn index="2">
+        <Name>data_assessment</Name>
+        <Type>0</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="3">
+        <Name>feature_least_depth</Name>
+        <Type>0</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="4">
+        <Name>significant_features</Name>
+        <Type>0</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="5">
+        <Name>feature_size</Name>
+        <Type>1</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="6">
+        <Name>coverage</Name>
+        <Type>0</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="7">
+        <Name>bathy_coverage</Name>
+        <Type>0</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="8">
+        <Name>horizontal_uncert_fixed</Name>
+        <Type>1</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="9">
+        <Name>horizontal_uncert_var</Name>
+        <Type>1</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="10">
+        <Name>vertical_uncert_fixed</Name>
+        <Type>1</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="11">
+        <Name>vertical_uncert_var</Name>
+        <Type>1</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="12">
+        <Name>license_name</Name>
+        <Type>2</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="13">
+        <Name>license_url</Name>
+        <Type>2</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="14">
+        <Name>source_survey_id</Name>
+        <Type>2</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="15">
+        <Name>source_institution</Name>
+        <Type>2</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="16">
+        <Name>survey_date_start</Name>
+        <Type>2</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="17">
+        <Name>survey_date_end</Name>
+        <Type>2</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <Row index="0">
+        <F>0</F>
+        <F>537095</F>
+        <F>3</F>
+        <F>0</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1000000</F>
+        <F>1000000</F>
+        <F>1000000</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>NBS Generalization</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>N/A</F>
+        <F>N/A</F>
+      </Row>
+      <Row index="1">
+        <F>47929</F>
+        <F>11</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>500</F>
+        <F>0</F>
+        <F>2</F>
+        <F>0.05</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>H02633</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>1903-01-01</F>
+        <F>1903-01-01</F>
+      </Row>
+      <Row index="2">
+        <F>14627</F>
+        <F>89457</F>
+        <F>1</F>
+        <F>0</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>W00296_MB_VR_MLLW</F>
+        <F>United States Environmental Protection Agency</F>
+        <F>2013-02-25</F>
+        <F>2013-02-26</F>
+      </Row>
+      <Row index="3">
+        <F>47922</F>
+        <F>10</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>50</F>
+        <F>0</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>H09587</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>1976-01-01</F>
+        <F>1976-01-01</F>
+      </Row>
+      <Row index="4">
+        <F>206748</F>
+        <F>1163205</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>Job670041_2019_ngs_topobathy_dem_pr_000_001</F>
+        <F>DOC/NOAA/NOS/NGS/RSD -- Remote Sensing Division</F>
+        <F>2019-01-20</F>
+        <F>2019-06-02</F>
+      </Row>
+      <Row index="5">
+        <F>47931</F>
+        <F>101</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>500</F>
+        <F>0</F>
+        <F>2</F>
+        <F>0.05</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>H02537</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>1901-01-01</F>
+        <F>1901-01-01</F>
+      </Row>
+      <Row index="6">
+        <F>47933</F>
+        <F>199</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>500</F>
+        <F>0</F>
+        <F>2</F>
+        <F>0.05</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>H02640</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>1903-01-01</F>
+        <F>1903-01-01</F>
+      </Row>
+      <Row index="7">
+        <F>47934</F>
+        <F>283</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>500</F>
+        <F>0</F>
+        <F>2</F>
+        <F>0.05</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>H02678</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>1904-01-01</F>
+        <F>1904-01-01</F>
+      </Row>
+      <Row index="8">
+        <F>219350</F>
+        <F>276566</F>
+        <F>1</F>
+        <F>0</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>H11560_LI_3m_MLLW_1of1</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>2006-04-09</F>
+        <F>2006-05-14</F>
+      </Row>
+      <Row index="9">
+        <F>14642</F>
+        <F>236150</F>
+        <F>1</F>
+        <F>0</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>W00296_MB_VR_MLLW.upsampled</F>
+        <F>United States Environmental Protection Agency</F>
+        <F>2013-02-25</F>
+        <F>2013-02-26</F>
+      </Row>
+      <Row index="10">
+        <F>47937</F>
+        <F>49450</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>500</F>
+        <F>0</F>
+        <F>2</F>
+        <F>0.05</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>H02537.interpolated</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>1901-01-01</F>
+        <F>1901-01-01</F>
+      </Row>
+      <Row index="11">
+        <F>47939</F>
+        <F>13826</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>500</F>
+        <F>0</F>
+        <F>2</F>
+        <F>0.05</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>H02633.interpolated</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>1903-01-01</F>
+        <F>1903-01-01</F>
+      </Row>
+      <Row index="12">
+        <F>47940</F>
+        <F>906635</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>500</F>
+        <F>0</F>
+        <F>2</F>
+        <F>0.05</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>H02640.interpolated</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>1903-01-01</F>
+        <F>1903-01-01</F>
+      </Row>
+      <Row index="13">
+        <F>47941</F>
+        <F>22</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>500</F>
+        <F>0</F>
+        <F>2</F>
+        <F>0.05</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>H02676.interpolated</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>1909-01-01</F>
+        <F>1909-01-01</F>
+      </Row>
+      <Row index="14">
+        <F>47942</F>
+        <F>156723</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>500</F>
+        <F>0</F>
+        <F>2</F>
+        <F>0.05</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>H02678.interpolated</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>1904-01-01</F>
+        <F>1904-01-01</F>
+      </Row>
+      <Row index="15">
+        <F>47926</F>
+        <F>231654</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>50</F>
+        <F>0</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>H09587.interpolated</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>1976-01-01</F>
+        <F>1976-01-01</F>
+      </Row>
+      <Row index="16">
+        <F>14660</F>
+        <F>1</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>500</F>
+        <F>0</F>
+        <F>2</F>
+        <F>0.05</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>US,US,graph,Chart 25671_19920620_US4PR60M_20230118</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>1992-06-20</F>
+        <F>1992-06-20</F>
+      </Row>
+      <Row index="17">
+        <F>1869045</F>
+        <F>19029</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>500</F>
+        <F>0</F>
+        <F>3</F>
+        <F>0.05</F>
+        <F>cc-by-4.0</F>
+        <F>https://creativecommons.org/licenses/by/4.0/legalcode</F>
+        <F>GMRT_61m_US3PR1IO</F>
+        <F>Global Multi-Resolution Topography Data Synthesis (GMRT)</F>
+        <F>2022-03-28</F>
+        <F>2022-03-28</F>
+      </Row>
+      <Row index="18">
+        <F>206746</F>
+        <F>4402</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>Job669992_pr2015_ngs_topobathy_dem_000_001</F>
+        <F>DOC/NOAA/NOS/NGS/RSD -- Remote Sensing Division</F>
+        <F>2014-11-02</F>
+        <F>2015-05-20</F>
+      </Row>
+      <Row index="19">
+        <F>47932</F>
+        <F>50</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>500</F>
+        <F>0</F>
+        <F>2</F>
+        <F>0.05</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>H02555</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>1902-01-01</F>
+        <F>1902-01-01</F>
+      </Row>
+      <Row index="20">
+        <F>14645</F>
+        <F>377211</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>Job670041_2019_ngs_topobathy_dem_pr_001_001</F>
+        <F>DOC/NOAA/NOS/NGS/RSD -- Remote Sensing Division</F>
+        <F>2019-01-20</F>
+        <F>2019-06-02</F>
+      </Row>
+      <Row index="21">
+        <F>47938</F>
+        <F>54740</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>500</F>
+        <F>0</F>
+        <F>2</F>
+        <F>0.05</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>H02555.interpolated</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>1902-01-01</F>
+        <F>1902-01-01</F>
+      </Row>
+    </GDALRasterAttributeTable>
+  </PAMRasterBand>
+</PAMDataset>
