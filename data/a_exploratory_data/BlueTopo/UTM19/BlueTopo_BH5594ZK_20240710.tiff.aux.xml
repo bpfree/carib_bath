@@ -1,0 +1,1123 @@
+<PAMDataset>
+  <PAMRasterBand band="1">
+    <Description>Elevation</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="2">
+    <Description>Uncertainty</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="3">
+    <Description>Contributor</Description>
+    <GDALRasterAttributeTable tableType="thematic">
+      <FieldDefn index="0">
+        <Name>value</Name>
+        <Type>0</Type>
+        <Usage>5</Usage>
+      </FieldDefn>
+      <FieldDefn index="1">
+        <Name>count</Name>
+        <Type>0</Type>
+        <Usage>1</Usage>
+      </FieldDefn>
+      <FieldDefn index="2">
+        <Name>data_assessment</Name>
+        <Type>0</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="3">
+        <Name>feature_least_depth</Name>
+        <Type>0</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="4">
+        <Name>significant_features</Name>
+        <Type>0</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="5">
+        <Name>feature_size</Name>
+        <Type>1</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="6">
+        <Name>coverage</Name>
+        <Type>0</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="7">
+        <Name>bathy_coverage</Name>
+        <Type>0</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="8">
+        <Name>horizontal_uncert_fixed</Name>
+        <Type>1</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="9">
+        <Name>horizontal_uncert_var</Name>
+        <Type>1</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="10">
+        <Name>vertical_uncert_fixed</Name>
+        <Type>1</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="11">
+        <Name>vertical_uncert_var</Name>
+        <Type>1</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="12">
+        <Name>license_name</Name>
+        <Type>2</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="13">
+        <Name>license_url</Name>
+        <Type>2</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="14">
+        <Name>source_survey_id</Name>
+        <Type>2</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="15">
+        <Name>source_institution</Name>
+        <Type>2</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="16">
+        <Name>survey_date_start</Name>
+        <Type>2</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <FieldDefn index="17">
+        <Name>survey_date_end</Name>
+        <Type>2</Type>
+        <Usage>0</Usage>
+      </FieldDefn>
+      <Row index="0">
+        <F>0</F>
+        <F>39370</F>
+        <F>3</F>
+        <F>0</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1000000</F>
+        <F>1000000</F>
+        <F>1000000</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>NBS Generalization</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>N/A</F>
+        <F>N/A</F>
+      </Row>
+      <Row index="1">
+        <F>232599</F>
+        <F>35</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20210511_CS_2021_162_01_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-05-11</F>
+        <F>2021-05-11</F>
+      </Row>
+      <Row index="2">
+        <F>232602</F>
+        <F>296</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20210511_CS_2021_162_01_HF.interpolate</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-05-11</F>
+        <F>2021-05-11</F>
+      </Row>
+      <Row index="3">
+        <F>232603</F>
+        <F>38</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20210511_CS_2021_162_02_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-05-11</F>
+        <F>2021-05-11</F>
+      </Row>
+      <Row index="4">
+        <F>232604</F>
+        <F>567</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20210511_CS_2021_162_02_HF.interpolate</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-05-11</F>
+        <F>2021-05-11</F>
+      </Row>
+      <Row index="5">
+        <F>232746</F>
+        <F>33</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20210511_CS_2021_162_03_HF.interpolate</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-05-11</F>
+        <F>2021-05-11</F>
+      </Row>
+      <Row index="6">
+        <F>232607</F>
+        <F>3</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20210512_CS_2021_162_03_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-05-12</F>
+        <F>2021-05-12</F>
+      </Row>
+      <Row index="7">
+        <F>232611</F>
+        <F>29</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20210512_CS_2021_162_03_HF.interpolate</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-05-12</F>
+        <F>2021-05-12</F>
+      </Row>
+      <Row index="8">
+        <F>232633</F>
+        <F>5</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20210511_CS_2021_162_03_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-05-11</F>
+        <F>2021-05-11</F>
+      </Row>
+      <Row index="9">
+        <F>8245</F>
+        <F>143</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>Job664773_pr2018_usace_pr_dem_004_001</F>
+        <F>DOD/USACE/JALBTCX -- Joint Airborne Lidar Bathymetry Technical Center of Expertise</F>
+        <F>2018-07-03</F>
+        <F>2018-07-25</F>
+      </Row>
+      <Row index="10">
+        <F>8249</F>
+        <F>10312</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>Job664773_pr2018_usace_pr_dem_004_002</F>
+        <F>DOD/USACE/JALBTCX -- Joint Airborne Lidar Bathymetry Technical Center of Expertise</F>
+        <F>2018-07-03</F>
+        <F>2018-07-25</F>
+      </Row>
+      <Row index="11">
+        <F>232658</F>
+        <F>124936</F>
+        <F>1</F>
+        <F>1</F>
+        <F>1</F>
+        <F>1</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>0.5</F>
+        <F>0.01</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>H13140_MB_VR_MLLW</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>2018-09-13</F>
+        <F>2018-10-12</F>
+      </Row>
+      <Row index="12">
+        <F>232664</F>
+        <F>295</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20190506_CS_2019_146_02.interpolate</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2019-05-06</F>
+        <F>2019-05-06</F>
+      </Row>
+      <Row index="13">
+        <F>232669</F>
+        <F>6498</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>Job669841_pr2016_usace_ncmp_pr_dem_004_000</F>
+        <F>DOD/USACE/JALBTCX -- Joint Airborne Lidar Bathymetry Technical Center of Expertise</F>
+        <F>2016-01-28</F>
+        <F>2016-02-07</F>
+      </Row>
+      <Row index="14">
+        <F>232673</F>
+        <F>217</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20210510_CS_2021_162_03_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-05-10</F>
+        <F>2021-05-10</F>
+      </Row>
+      <Row index="15">
+        <F>232674</F>
+        <F>1</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20210510_CS_2021_162_01_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-05-10</F>
+        <F>2021-05-10</F>
+      </Row>
+      <Row index="16">
+        <F>8252</F>
+        <F>23480</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>Job669985_pr2016_ngs_topobathy_dem_003_002</F>
+        <F>DOC/NOAA/NOS/NGS/RSD -- Remote Sensing Division</F>
+        <F>2016-02-19</F>
+        <F>2016-03-31</F>
+      </Row>
+      <Row index="17">
+        <F>8253</F>
+        <F>4169</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>Job669985_pr2016_ngs_topobathy_dem_002_002</F>
+        <F>DOC/NOAA/NOS/NGS/RSD -- Remote Sensing Division</F>
+        <F>2016-02-19</F>
+        <F>2016-03-31</F>
+      </Row>
+      <Row index="18">
+        <F>232686</F>
+        <F>653</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20210512_CS_2021_162_01_HF.interpolate</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-05-12</F>
+        <F>2021-05-12</F>
+      </Row>
+      <Row index="19">
+        <F>232687</F>
+        <F>36</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20210512_CS_2021_162_01_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-05-12</F>
+        <F>2021-05-12</F>
+      </Row>
+      <Row index="20">
+        <F>8255</F>
+        <F>136912</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>Job670041_2019_ngs_topobathy_dem_pr_004_002</F>
+        <F>DOC/NOAA/NOS/NGS/RSD -- Remote Sensing Division</F>
+        <F>2019-01-20</F>
+        <F>2019-06-02</F>
+      </Row>
+      <Row index="21">
+        <F>232691</F>
+        <F>79</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20190506_CS_2019_146_01</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2019-05-06</F>
+        <F>2019-05-06</F>
+      </Row>
+      <Row index="22">
+        <F>48211</F>
+        <F>806</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>50</F>
+        <F>0</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>H08849</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>1965-01-01</F>
+        <F>1965-01-01</F>
+      </Row>
+      <Row index="23">
+        <F>48215</F>
+        <F>202</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>50</F>
+        <F>0</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>H08848</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>1965-01-01</F>
+        <F>1965-01-01</F>
+      </Row>
+      <Row index="24">
+        <F>48223</F>
+        <F>4</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20211109_CS_2022_009_07_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-11-09</F>
+        <F>2021-11-09</F>
+      </Row>
+      <Row index="25">
+        <F>48224</F>
+        <F>27</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20211109_CS_2022_009_07_HF.interpolate</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-11-09</F>
+        <F>2021-11-09</F>
+      </Row>
+      <Row index="26">
+        <F>48225</F>
+        <F>330</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20211111_CS_2022_009_01_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-11-11</F>
+        <F>2021-11-11</F>
+      </Row>
+      <Row index="27">
+        <F>48227</F>
+        <F>189</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20211111_CS_2022_009_02_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-11-11</F>
+        <F>2021-11-11</F>
+      </Row>
+      <Row index="28">
+        <F>48228</F>
+        <F>1010</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20211111_CS_2022_009_02_HF.interpolate</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-11-11</F>
+        <F>2021-11-11</F>
+      </Row>
+      <Row index="29">
+        <F>48229</F>
+        <F>23</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20211111_CS_2022_009_03_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-11-11</F>
+        <F>2021-11-11</F>
+      </Row>
+      <Row index="30">
+        <F>48230</F>
+        <F>26</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20211111_CS_2022_009_03_HF.interpolate</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-11-11</F>
+        <F>2021-11-11</F>
+      </Row>
+      <Row index="31">
+        <F>8268</F>
+        <F>328</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20211113_CS_2022_009_01_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-11-13</F>
+        <F>2021-11-13</F>
+      </Row>
+      <Row index="32">
+        <F>8270</F>
+        <F>2683</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20211113_CS_2022_009_02_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-11-13</F>
+        <F>2021-11-13</F>
+      </Row>
+      <Row index="33">
+        <F>8271</F>
+        <F>14242</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20211113_CS_2022_009_02_HF.interpolate</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2021-11-13</F>
+        <F>2021-11-13</F>
+      </Row>
+      <Row index="34">
+        <F>14814</F>
+        <F>350</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20220526_CS_2022_112_01_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2022-05-26</F>
+        <F>2022-05-26</F>
+      </Row>
+      <Row index="35">
+        <F>14816</F>
+        <F>136</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20220527_CS_2022_112_01_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2022-05-27</F>
+        <F>2022-05-27</F>
+      </Row>
+      <Row index="36">
+        <F>8288</F>
+        <F>459</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20220527_CS_2022_112_01_HF.interpolate</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2022-05-27</F>
+        <F>2022-05-27</F>
+      </Row>
+      <Row index="37">
+        <F>14817</F>
+        <F>6304</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20220531_CS_2022_112_01_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2022-05-31</F>
+        <F>2022-05-31</F>
+      </Row>
+      <Row index="38">
+        <F>8289</F>
+        <F>31756</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20220531_CS_2022_112_01_HF.interpolate</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2022-05-31</F>
+        <F>2022-05-31</F>
+      </Row>
+      <Row index="39">
+        <F>14818</F>
+        <F>5770</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20220606_CS_2022_112_01_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2022-06-06</F>
+        <F>2022-06-06</F>
+      </Row>
+      <Row index="40">
+        <F>14819</F>
+        <F>17036</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20220606_CS_2022_112_01_HF.interpolate</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2022-06-06</F>
+        <F>2022-06-06</F>
+      </Row>
+      <Row index="41">
+        <F>14820</F>
+        <F>2067</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20220606_CS_2022_112_02_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2022-06-06</F>
+        <F>2022-06-06</F>
+      </Row>
+      <Row index="42">
+        <F>8290</F>
+        <F>11597</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20220606_CS_2022_112_02_HF.interpolate</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2022-06-06</F>
+        <F>2022-06-06</F>
+      </Row>
+      <Row index="43">
+        <F>8291</F>
+        <F>7221</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20220607_CS_2022_112_01_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2022-06-07</F>
+        <F>2022-06-07</F>
+      </Row>
+      <Row index="44">
+        <F>8292</F>
+        <F>39827</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20220607_CS_2022_112_01_HF.interpolate</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2022-06-07</F>
+        <F>2022-06-07</F>
+      </Row>
+      <Row index="45">
+        <F>8293</F>
+        <F>957</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>5</F>
+        <F>0.05</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>SJ_01_SJH_20220607_CS_2022_112_02_HF</F>
+        <F>DOD/USACE -- US Army Corps of Engineers Jacksonville District</F>
+        <F>2022-06-07</F>
+        <F>2022-06-07</F>
+      </Row>
+      <Row index="46">
+        <F>48234</F>
+        <F>11439</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>50</F>
+        <F>0</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>H08848.interpolated</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>1965-01-01</F>
+        <F>1965-01-01</F>
+      </Row>
+      <Row index="47">
+        <F>48235</F>
+        <F>39950</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>0</F>
+        <F>50</F>
+        <F>0</F>
+        <F>1</F>
+        <F>0.02</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>H08849.interpolated</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>1965-01-01</F>
+        <F>1965-01-01</F>
+      </Row>
+      <Row index="48">
+        <F>48257</F>
+        <F>4</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>500</F>
+        <F>0</F>
+        <F>2</F>
+        <F>0.05</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>US,US,graph,Chart 25670_20000115_US5SJUCD_20240613</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>2000-01-15</F>
+        <F>2000-01-15</F>
+      </Row>
+      <Row index="49">
+        <F>48258</F>
+        <F>2</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>500</F>
+        <F>0</F>
+        <F>2</F>
+        <F>0.05</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>US,US,graph,DD-31296_20180721_US5SJUCD_20240613</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>2018-07-21</F>
+        <F>2018-07-21</F>
+      </Row>
+      <Row index="50">
+        <F>48261</F>
+        <F>1</F>
+        <F>1</F>
+        <F>1000000</F>
+        <F>0</F>
+        <F>1000000</F>
+        <F>1</F>
+        <F>1</F>
+        <F>500</F>
+        <F>0</F>
+        <F>2</F>
+        <F>0.05</F>
+        <F>cc0-1.0</F>
+        <F>https://creativecommons.org/publicdomain/zero/1.0/legalcode</F>
+        <F>US,US,graph,H-13140_20181012_US5SJUCD_20240613</F>
+        <F>DOC/NOAA/NOS/OCS -- Office of Coast Survey</F>
+        <F>2018-10-12</F>
+        <F>2018-10-12</F>
+      </Row>
+    </GDALRasterAttributeTable>
+  </PAMRasterBand>
+</PAMDataset>
