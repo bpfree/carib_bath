@@ -79,7 +79,9 @@ pri_vir <- data %>%
   dplyr::filter(grepl(pattern = 'Puerto | Virgin Islands',
                       x = Jurisdicti)) %>%
   dplyr::mutate(waters = "state") %>%
+  # group by waters
   dplyr::group_by() %>%
+  # summarise by waters to flatten data
   dplyr::summarise()
 
 plot(pri_vir$Shape)
@@ -95,6 +97,7 @@ eez <- data %>%
   dplyr::filter(lengths(sf::st_touches(x = .,
                                        # lengths > 0 will return polygons touching the coastal waters
                                        y = pri_vir)) > 0) %>%
+  # select only the Shape field
   dplyr::select(Shape)
 
 plot(eez$Shape)
