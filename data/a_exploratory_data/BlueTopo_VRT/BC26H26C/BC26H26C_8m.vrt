@@ -2,6 +2,14 @@
   <SRS dataAxisToSRSAxisMapping="1,2,3">COMPD_CS["NAD83(2011) / UTM zone 19N + MSL height",PROJCS["NAD83(2011) / UTM zone 19N",GEOGCS["NAD83(2011)",DATUM["NAD83_National_Spatial_Reference_System_2011",SPHEROID["GRS 1980",6378137,298.257222101,AUTHORITY["EPSG","7019"]],AUTHORITY["EPSG","1116"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","6318"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",-69],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","6348"]],VERT_CS["MSL height",VERT_DATUM["Mean Sea Level",2005,AUTHORITY["EPSG","5100"]],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Gravity-related height",UP],AUTHORITY["EPSG","5714"]]]</SRS>
   <GeoTransform>  6.5877200000000000e+05,  8.0000000000000000e+00,  0.0000000000000000e+00,  1.9910680000000000e+06,  0.0000000000000000e+00, -8.0000000000000000e+00</GeoTransform>
   <VRTRasterBand dataType="Float32" band="1">
+    <Metadata>
+      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-9.1199998855591</MDI>
+      <MDI key="STATISTICS_MEAN">-1835.9807287077</MDI>
+      <MDI key="STATISTICS_MINIMUM">-3142.7299804688</MDI>
+      <MDI key="STATISTICS_STDDEV">962.18495639743</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">85.86</MDI>
+    </Metadata>
     <Description>Elevation</Description>
     <NoDataValue>nan</NoDataValue>
     <ColorInterp>Gray</ColorInterp>
@@ -15,6 +23,14 @@
     </ComplexSource>
   </VRTRasterBand>
   <VRTRasterBand dataType="Float32" band="2">
+    <Metadata>
+      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
+      <MDI key="STATISTICS_MAXIMUM">351.88000488281</MDI>
+      <MDI key="STATISTICS_MEAN">185.18682400133</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.210000038147</MDI>
+      <MDI key="STATISTICS_STDDEV">96.700826931801</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">85.86</MDI>
+    </Metadata>
     <Description>Uncertainty</Description>
     <NoDataValue>nan</NoDataValue>
     <ComplexSource>
@@ -27,6 +43,14 @@
     </ComplexSource>
   </VRTRasterBand>
   <VRTRasterBand dataType="Float32" band="3">
+    <Metadata>
+      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
+      <MDI key="STATISTICS_MAXIMUM">232576</MDI>
+      <MDI key="STATISTICS_MEAN">13750.648902682</MDI>
+      <MDI key="STATISTICS_MINIMUM">0</MDI>
+      <MDI key="STATISTICS_STDDEV">52298.074532819</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">85.86</MDI>
+    </Metadata>
     <Description>Contributor</Description>
     <NoDataValue>nan</NoDataValue>
     <ComplexSource>
@@ -38,5 +62,4 @@
       <NODATA>nan</NODATA>
     </ComplexSource>
   </VRTRasterBand>
-  <OverviewList resampling="nearest">2 4 8 16</OverviewList>
 </VRTDataset>
