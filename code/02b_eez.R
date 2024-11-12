@@ -33,6 +33,7 @@ pacman::p_load(renv,
                ggplot2,
                janitor,
                mregions2,
+               nngeo,
                plyr,
                purrr,
                rmapshaper,
@@ -76,10 +77,15 @@ data <- sf::st_read(dsn = data_dir)
 pri_vir <- data %>%
   # get the waters around Puerto Rico and U.S. Virgin Islands
   dplyr::filter(grepl(pattern = 'Puerto | Virgin Islands',
-                      x = Jurisdicti))
+                      x = Jurisdicti)) %>%
+  dplyr::mutate(waters = "state") %>%
+  dplyr::group_by() %>%
+  dplyr::summarise()
+
+plot(pri_vir$Shape)
 
 ## EEZ waters
-eez <- pri_vir %>%
+eez <- data %>%
   # get the federal waters
   dplyr::filter(grepl(pattern = 'Federal',
                       x = Jurisdicti)) %>%
@@ -88,16 +94,19 @@ eez <- pri_vir %>%
   # get the areas where federal waters (EEZ) touch the waters around Puerto Rico and U.S. Virgin Islands
   dplyr::filter(lengths(sf::st_touches(x = .,
                                        # lengths > 0 will return polygons touching the coastal waters
-                                       y = pri_vir)) > 0)
+                                       y = pri_vir)) > 0) %>%
+  dplyr::select(Shape)
 
 plot(eez$Shape)
 
 carib_waters <- rbind(pri_vir,
                       eez) %>%
   # dissolve to have single boundary
-  rmapshaper::ms_dissolve()
+  rmapshaper::ms_dissolve() %>%
+  # make a single polygon without any holes
+  nngeo::st_remove_holes()
 
-plot(carib_waters$Shape)
+plot(carib_waters$geometry)
 
 #####################################
 #####################################
@@ -110,3 +119,8 @@ sf::st_write(obj = carib_waters, dsn = output_gpkg, layer = "eez_pri_vir", appen
 
 # calculate end time and print time difference
 print(Sys.time() - start) # print how long it takes to calculate
+
+sf::st_layers(dsn = output_gpkg)
+
+sf::st_delete(dsn = output_gpkg,
+              layer = "eez_boundary")
