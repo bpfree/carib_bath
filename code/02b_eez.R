@@ -15,6 +15,9 @@ start <- Sys.time()
 ## designate region name
 region_name <- "carib"
 
+## country iso3 code
+iso3 <- c("PRI", "VIR")
+
 ## coordinate reference system
 ### set the coordinate reference system that data should become (NAD83 UTM 19N: https://epsg.io/26919)
 crs <- "EPSG:26919"
@@ -58,13 +61,6 @@ output_gpkg <- "data/a_exploratory_data/eez.gpkg"
 
 # inspect layers within geodatabase
 sf::st_layers(dsn = data_dir)
-
-#####################################
-#####################################
-
-# parameters
-## country iso3 code
-iso3 <- c("PRI", "VIR")
 
 #####################################
 #####################################
