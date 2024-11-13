@@ -48,7 +48,7 @@ pacman::p_load(renv,
 
 # set directories
 ## define data directory (as this is an R Project, pathnames are simplified)
-utm <- stringr::str_glue("data/a_exploratory_data/BlueTopo/UTM{utm}")
+utm_dir <- stringr::str_glue("data/a_exploratory_data/BlueTopo/UTM{utm}")
 
 eez_dir <- "data/a_exploratory_data/eez.gpkg"
 
@@ -81,12 +81,12 @@ caribbean_tiles <- data[boundary,]
 #####################################
 #####################################
 
-merge_function <- function(res, dir, utm, tile_code){
+merge_function <- function(resolution, dir, utm_zone, tile_code){
   
   code <- tile_code
   
   res <- caribbean_tiles %>%
-    dplyr::filter(Resolution == res,
+    dplyr::filter(Resolution == resolution,
                   UTM == utm)
   
   res_list <- as.vector(res$tile)
@@ -106,9 +106,9 @@ merge_function <- function(res, dir, utm, tile_code){
   return(bathymetry)
 }
 
-res4 <- merge_function(res = "4m", dir = utm20n_dir, utm = utm, tile_code = "BH")
-res8 <- merge_function(res = "8m", dir = utm20n_dir, utm = utm, tile_code = "BF")
-res16 <- merge_function(res = "16m", dir = utm20n_dir, utm = utm, tile_code = "BC")
+res4 <- merge_function(resolution = "4m", dir = utm_dir, utm_zone = utm, tile_code = "BH")
+res8 <- merge_function(resolution = "8m", dir = utm_dir, utm_zone = utm, tile_code = "BF")
+res16 <- merge_function(resolution = "16m", dir = utm_dir, utm_zone = utm, tile_code = "BC")
 
 plot(res4)
 plot(res8)
