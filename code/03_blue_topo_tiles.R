@@ -136,10 +136,10 @@ plot(res16)
 res4_agg8 <- terra::aggregate(x = res4,
                               # factor = 2 (2 ** 2 = 2 * 2 = 4)
                               fact = 2)
-res(res4_agg)
+res(res4_agg8)
 
 ### combine aggregated 4m and regular 8m resolution data
-res8_agg <- terra::merge(x = res4_agg,
+res8_agg <- terra::merge(x = res4_agg8,
                          # 8m resolution data
                          y = res8)
 
@@ -151,23 +151,26 @@ res4_agg16 <- terra::aggregate(x = res4,
                                # factor = 4 (4 * 4 = 16)
                                fact = 4)
 res(res4_agg16)
+plot(res4_agg16)
 
 ### aggregate the 8m resolution data
 res8_agg16 <- terra::aggregate(x = res8,
                                # factor = 2 (8 * 2 = 16
                                fact = 2)
 res(res8_agg16)
+plot(res8_agg16)
 
 # merge the aggregated 4m and aggregated 8m data
-res8_agg <- terra::merge(x = res4_agg16,
+res48_agg16 <- terra::merge(x = res4_agg16,
                          # aggregated 8m tiles
                              y = res8_agg16)
-res(res8_agg)
+res(res48_agg16)
+plot(res48_agg16)
 
 # merge the aggregated 4m and aggregated 8m data with the 16m data
-res16_agg <- terra::merge(x = res8_agg,
+res16_agg <- terra::merge(x = res48_agg16,
                           # normal 16m data
-                          y = res16_20n)
+                          y = res16)
 res(res16_agg)
 plot(res16_agg)
 
