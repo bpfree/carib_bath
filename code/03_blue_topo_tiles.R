@@ -15,9 +15,6 @@ start <- Sys.time()
 ## designate region name
 region_name <- "carib"
 
-## resolution
-res <- "16m"
-
 ## UTM
 utm <- "19"
 
@@ -114,56 +111,15 @@ merge_function <- function(resolution, dir, utm_zone, tile_code){
   
   bathymetry <- merge$Elevation
   
-  # return(bathymetry)
-  
   #####################################
   
   # export data
-  terra::writeRaster(x = bathymetry, file = file.path(raster_dir, stringr::str_glue("{region_name}_4m_utm{utm}n.grd")), overwrite = T)
-  # terra::writeRaster(x = res8, file = file.path(raster_dir, stringr::str_glue("{region_name}_8m_utm{utm}n.grd")), overwrite = T)
-  # terra::writeRaster(x = res16, file = file.path(raster_dir, stringr::str_glue("{region_name}_16m_utm{utm}n.grd")), overwrite = T)
-  
-  # # aggregate data
-  # ## 8m
-  # ### aggregate the 4m resolution to match 8m resolution
-  # res4_agg8 <- terra::aggregate(x = res4,
-  #                               # factor = 2 (2 ** 2 = 2 * 2 = 4)
-  #                               fact = 2)
-  # res(res4_agg)
-  # 
-  # ### combine aggregated 4m and regular 8m resolution data
-  # res8_agg <- terra::merge(x = res4_agg,
-  #                          # 8m resolution data
-  #                          y = res8)
-  # 
-  # ## 16m
-  # ### aggregate the 4m resolution data
-  # res4_agg16 <- terra::aggregate(x = res4,
-  #                                # factor = 4 (4 * 4 = 16)
-  #                                fact = 4)
-  # res(res4_agg16)
-  # 
-  # ### aggregate the 8m resolution data
-  # res8_agg16 <- terra::aggregate(x = res8,
-  #                                # factor = 2 (8 * 2 = 16
-  #                                fact = 2)
-  # res(res8_agg16)
-  # 
-  # # merge the aggregated 4m and aggregated 8m data
-  # res8_agg <- terra::merge(x = res4_agg16,
-  #                          # aggregated 8m tiles
-  #                          y = res8_agg16)
-  # res(res8_agg)
-  # 
-  # # merge the aggregated 4m and aggregated 8m data with the 16m data
-  # res16_agg <- terra::merge(x = res8_agg,
-  #                           # normal 16m data
-  #                           y = res16_20n)
-  # res(res16_agg)
-  # plot(res16_agg)
+  terra::writeRaster(x = bathymetry, file = file.path(raster_dir, stringr::str_glue("{region_name}_{resolution}_utm{utm}n.grd")), overwrite = T)
+
+  return(bathymetry)
 }
 
-res4 <- merge_function(resolution = res, dir = utm_dir, utm_zone = utm, tile_code = "BH")
+res4 <- merge_function(resolution = "4m", dir = utm_dir, utm_zone = utm, tile_code = "BH")
 res8 <- merge_function(resolution = "8m", dir = utm_dir, utm_zone = utm, tile_code = "BF")
 res16 <- merge_function(resolution = "16m", dir = utm_dir, utm_zone = utm, tile_code = "BC")
 
@@ -186,6 +142,8 @@ res(res4_agg)
 res8_agg <- terra::merge(x = res4_agg,
                          # 8m resolution data
                          y = res8)
+
+#####################################
 
 ## 16m
 ### aggregate the 4m resolution data
@@ -217,11 +175,6 @@ plot(res16_agg)
 #####################################
 
 # export data
-## raw data
-terra::writeRaster(x = res4, file = file.path(raster_dir, stringr::str_glue("{region_name}_4m_utm{utm}n.grd")), overwrite = T)
-terra::writeRaster(x = res8, file = file.path(raster_dir, stringr::str_glue("{region_name}_8m_utm{utm}n.grd")), overwrite = T)
-terra::writeRaster(x = res16, file = file.path(raster_dir, stringr::str_glue("{region_name}_16m_utm{utm}n.grd")), overwrite = T)
-
 ## aggregated data
 ## 8m
 terra::writeRaster(x = res4_agg8, file = file.path(raster_dir, stringr::str_glue("{region_name}_4m_agg8_utm{utm}n.grd")), overwrite = T)
