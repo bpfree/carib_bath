@@ -16,7 +16,7 @@ start <- Sys.time()
 region_name <- "carib"
 
 ## UTM
-utm <- "19"
+utm <- "20"
 
 ## designate date
 date <- format(Sys.Date(), "%Y%m%d")
