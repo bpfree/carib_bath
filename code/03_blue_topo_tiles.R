@@ -1,5 +1,5 @@
 ####################
-### 02. EEZ data ###
+### 03. EEZ data ###
 ####################
 
 # clear environment
@@ -16,7 +16,7 @@ start <- Sys.time()
 region_name <- "carib"
 
 ## UTM
-utm <- "20"
+utm <- "19"
 
 ## designate date
 date <- format(Sys.Date(), "%Y%m%d")
@@ -68,7 +68,7 @@ sf::st_layers(dsn = eez_dir)
 
 data <- sf::st_read(dsn = tiles_dir,
                     layer = sf::st_layers(dsn = tiles_dir)[1][[grep(pattern = "BlueTopo",
-                                                                   x = sf::st_layers(dsn = tiles_dir)[[1]])]])
+                                                                    x = sf::st_layers(dsn = tiles_dir)[[1]])]])
 
 boundary <- sf::st_read(dsn = eez_dir,
                         layer = sf::st_layers(dsn = eez_dir)[1][[grep(pattern = "eez",
@@ -115,7 +115,7 @@ merge_function <- function(resolution, dir, utm_zone, tile_code){
   
   # export data
   terra::writeRaster(x = bathymetry, file = file.path(raster_dir, stringr::str_glue("{region_name}_{resolution}_utm{utm}n.grd")), overwrite = T)
-
+  
   return(bathymetry)
 }
 
@@ -137,11 +137,14 @@ res4_agg8 <- terra::aggregate(x = res4,
                               # factor = 2 (2 ** 2 = 2 * 2 = 4)
                               fact = 2)
 res(res4_agg8)
+plot(res4_agg8)
 
 ### combine aggregated 4m and regular 8m resolution data
-res8_agg <- terra::merge(x = res4_agg8,
-                         # 8m resolution data
-                         y = res8)
+res8_agg <- terra::mosaic(x = res4_agg8,
+                          # 8m resolution data
+                          y = res8)
+
+plot(res8_agg)
 
 #####################################
 
@@ -161,16 +164,16 @@ res(res8_agg16)
 plot(res8_agg16)
 
 # merge the aggregated 4m and aggregated 8m data
-res48_agg16 <- terra::merge(x = res4_agg16,
-                         # aggregated 8m tiles
+res48_agg16 <- terra::mosaic(x = res4_agg16,
+                             # aggregated 8m tiles
                              y = res8_agg16)
 res(res48_agg16)
 plot(res48_agg16)
 
 # merge the aggregated 4m and aggregated 8m data with the 16m data
-res16_agg <- terra::merge(x = res48_agg16,
-                          # normal 16m data
-                          y = res16)
+res16_agg <- terra::mosaic(x = res48_agg16,
+                           # normal 16m data
+                           y = res16)
 res(res16_agg)
 plot(res16_agg)
 
@@ -195,4 +198,3 @@ terra::writeRaster(x = res16_agg, file = file.path(raster_dir, stringr::str_glue
 
 # calculate end time and print time difference
 print(Sys.time() - start) # print how long it takes to calculate
-
