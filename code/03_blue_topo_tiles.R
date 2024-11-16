@@ -16,7 +16,7 @@ start <- Sys.time()
 region_name <- "carib"
 
 ## UTM
-utm <- "19"
+utm <- "20"
 
 ## designate date
 date <- format(Sys.Date(), "%Y%m%d")
@@ -139,7 +139,7 @@ res4_agg8 <- terra::aggregate(x = res4,
 res(res4_agg8)
 plot(res4_agg8)
 
-### combine aggregated 4m and regular 8m resolution data
+### mosaic aggregated 4m and regular 8m resolution data
 res8_agg <- terra::mosaic(x = res4_agg8,
                           # 8m resolution data
                           y = res8)
@@ -163,14 +163,14 @@ res8_agg16 <- terra::aggregate(x = res8,
 res(res8_agg16)
 plot(res8_agg16)
 
-# merge the aggregated 4m and aggregated 8m data
+# mosaic the aggregated 4m and aggregated 8m data
 res48_agg16 <- terra::mosaic(x = res4_agg16,
                              # aggregated 8m tiles
                              y = res8_agg16)
 res(res48_agg16)
 plot(res48_agg16)
 
-# merge the aggregated 4m and aggregated 8m data with the 16m data
+# mosaic the aggregated 4m and aggregated 8m data with the 16m data
 res16_agg <- terra::mosaic(x = res48_agg16,
                            # normal 16m data
                            y = res16)
