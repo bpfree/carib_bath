@@ -93,8 +93,8 @@ There remain some artefacts due to how the BlueTopo data originally got created 
 
 ### 6. Contacts
 - NOAA Caribbean leader: [Laughlin Siceloff](mailto:laughlin.siceloff@noaa.gov)
-- Offshore Wind (Caribbean) liaison: [Jennifer Au](mailto:jennifer.au@noaa.gov)
 - Data analysts: [Matthew Poti](mailto:matthew.poti@noaa.gov) and [Steven Lombardo](mailto:steven.lombardo@noaa.gov)
+- Caribbean Offshore Wind liaison: [Jennifer Au](mailto:jennifer.au@noaa.gov)
 
 For questions concerning the creation of these data and code, contact [Brian Free](mailto:brian.free@gmail.com).
 
