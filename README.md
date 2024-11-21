@@ -92,5 +92,8 @@ data to the US Caribbean EEZ.
 There remain some artefacts due to how the BlueTopo data originally got created and combined. There exist slits of no data between a few tiles. With more time and computing, it is possible to fill in those gaps with extrapolation methods.
 
 ### 6. Contacts
+*Aquaculture leader: Chris Schillaci
+*Project lead: Drew Resnick
+
 For questions concerning the creation of these data, contact [Brian Free](mailto:brian.free@gmail.com).
 [Tashi Geleg](mailto:phuntsok.geleg@noaa.gov) can assist with any questions about how to access, download, and generally interact with BlueTopo data.
