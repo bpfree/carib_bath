@@ -4,7 +4,43 @@ NOAA's BlueTopo and the Global multi-resolution topography datasets.
 
 ## Methods
 ### 1. Software
-R 4.4.0 (terra 1.7-78, sf 1.0-19, dplyr 1.1.4)
+```
+R version 4.4.0 (2024-04-24)
+Platform: aarch64-apple-darwin20
+Running under: macOS 15.1.1
+
+Matrix products: default
+BLAS:   /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib 
+LAPACK: /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/lib/libRlapack.dylib;  LAPACK version 3.12.0
+
+locale:
+[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+
+time zone: America/New_York
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] tidyr_1.3.1      terra_1.7-78     targets_1.8.0    stringr_1.5.1    sp_2.1-4         rmapshaper_0.5.0 purrr_1.0.2      plyr_1.8.9      
+ [9] nngeo_0.4.8      sf_1.0-19        mregions2_1.1.1  janitor_2.2.0    ggplot2_3.5.1    dplyr_1.1.4      devtools_2.4.5   usethis_3.0.0   
+[17] renv_1.0.11      pacman_0.5.1    
+
+loaded via a namespace (and not attached):
+ [1] tidyselect_1.2.1   fastmap_1.2.0      promises_1.3.0     digest_0.6.37      base64url_1.4      timechange_0.3.0   mime_0.12         
+ [8] lifecycle_1.0.4    secretbase_1.0.3   ellipsis_0.3.2     processx_3.8.4     magrittr_2.0.3     compiler_4.4.0     rlang_1.1.4       
+[15] tools_4.4.0        yaml_2.3.10        igraph_2.1.1       utf8_1.2.4         data.table_1.16.2  knitr_1.49         htmlwidgets_1.6.4 
+[22] pkgbuild_1.4.5     classInt_0.4-10    curl_6.0.0         pkgload_1.4.0      KernSmooth_2.23-24 miniUI_0.1.1.1     withr_3.0.2       
+[29] grid_4.4.0         fansi_1.0.6        urlchecker_1.0.1   profvis_0.4.0      xtable_1.8-4       e1071_1.7-16       colorspace_2.1-1  
+[36] scales_1.3.0       cli_3.6.3          generics_0.1.3     remotes_2.5.0      rstudioapi_0.17.1  sessioninfo_1.2.2  DBI_1.2.3         
+[43] cachem_1.1.0       proxy_0.4-27       vctrs_0.6.5        V8_6.0.0           jsonlite_1.8.9     callr_3.7.6        units_0.8-5       
+[50] glue_1.8.0         codetools_0.2-20   ps_1.8.1           lubridate_1.9.3    stringi_1.8.4      gtable_0.3.6       later_1.3.2       
+[57] munsell_0.5.1      tibble_3.2.1       pillar_1.9.0       htmltools_0.5.8.1  R6_2.5.1           shiny_1.9.1        evaluate_1.0.1    
+[64] lattice_0.22-6     backports_1.5.0    memoise_2.0.1      snakecase_0.11.1   httpuv_1.6.15      class_7.3-22       Rcpp_1.0.13-1     
+[71] xfun_0.49          fs_1.6.5           pkgconfig_2.0.3   
+```
+
 ArcGIS Pro 3.3.1
 
 ### Coordinate reference system
