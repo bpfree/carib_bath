@@ -77,7 +77,7 @@ data_download_function <- function(download_list, data_dir){
   
   # Download the data
   if (!file.exists(file)) {
-    options(timeout=100000)
+    options(timeout=1000000)
     # download the file from the URL
     download.file(url = url,
                   # place the downloaded file in the data directory
@@ -128,5 +128,33 @@ download_list <- c(
 #####################################
 #####################################
 
+#####################################
+#####################################
 
+parallel::detectCores()
+
+cl <- parallel::makeCluster(spec = parallel::detectCores(), # number of clusters wanting to create
+                            type = 'PSOCK')
+
+work <- parallel::parLapply(cl = cl, X = download_list, fun = data_download_function, data_dir = data_dir)
+
+parallel::stopCluster(cl = cl)
+
+#####################################
+#####################################
+
+# list all files in data directory
+list.files(data_dir)
+
+file <- list.files(data_dir, pattern = "GridServer")
+
+file.rename(from = file.path(data_dir, file),
+            # and move to the new bathymetry subdirectory
+            to = file.path(data_dir, "gmrt_v4.grd"))
+
+#####################################
+#####################################
+
+# calculate end time and print time difference
+print(Sys.time() - start) # print how long it takes to calculate
 
