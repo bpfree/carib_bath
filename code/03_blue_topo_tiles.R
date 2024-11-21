@@ -134,7 +134,7 @@ plot(res16)
 ## 8m
 ### aggregate the 4m resolution to match 8m resolution
 res4_agg8 <- terra::aggregate(x = res4,
-                              # factor = 2 (2 ** 2 = 2 * 2 = 4)
+                              # factor
                               fact = 2)
 res(res4_agg8)
 plot(res4_agg8)
@@ -151,14 +151,14 @@ plot(res8_agg)
 ## 16m
 ### aggregate the 4m resolution data
 res4_agg16 <- terra::aggregate(x = res4,
-                               # factor = 4 (4 * 4 = 16)
+                               # factor
                                fact = 4)
 res(res4_agg16)
 plot(res4_agg16)
 
 ### aggregate the 8m resolution data
 res8_agg16 <- terra::aggregate(x = res8,
-                               # factor = 2 (8 * 2 = 16
+                               # factor
                                fact = 2)
 res(res8_agg16)
 plot(res8_agg16)
