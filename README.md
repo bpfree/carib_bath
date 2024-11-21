@@ -44,15 +44,15 @@ loaded via a namespace (and not attached):
 [71] xfun_0.49          fs_1.6.5           pkgconfig_2.0.3   
 ```
 
-### Coordinate reference system
+### 2. Coordinate reference system
 After discussions on which coordinate reference system to procede, it was chosen that WGS84 (EPSG:4326) would minimize any area differences across the US Caribbean EEZ. BlueTopo data come in both the UTM19N and UTM20N zones, while the GMRT data are in WGS84.
 
-### 2. Data sources
+### 3. Data sources
 #### EEZ
 Exclusive economic zone data came from [here](https://marinecadastre.gov/downloads/data/mc/FederalStateWaters.zip) and cover all state and federal waters (for [metadata](https://www.fisheries.noaa.gov/inport/item/54383)). The Coastal Management Act [data](https://hub.marinecadastre.gov/datasets/noaa::coastal-zone-management-act/about) are similar and do fill in small holes that exist for smaller islands.
 NOAA's OCS also [provide data](https://nauticalcharts.noaa.gov/data/us-maritime-limits-and-boundaries.html) for [EEZ boundaries](https://maritimeboundaries.noaa.gov/downloads/USMaritimeLimitsAndBoundariesSHP.zip). These exist as polylines, so are less ideal for the current work.
 
-Within R, the EEZ polygon got flattened and all holes (areas islands reside) got removed to ensure the EEZ covered all required areas.
+The United States Caribbean EEZ are comprised of those for Puerto Rico and US Virgin Islands. Within R, these two EEZ polygons got combined, flattened, and all holes (areas islands reside) removed to ensure the EEZ covered all required areas.
 
 #### BlueTopo
 [BlueTopo](https://nauticalcharts.noaa.gov/data/bluetopo.html) are products by NOAA's Office of Coast Survey that provide consistent bathymetry coverage for the waters across the United States. For understanding naming conventions and other specifications in regards to the data, please visit [this page](https://nauticalcharts.noaa.gov/data/bluetopo_specs.html).
@@ -62,25 +62,35 @@ This analysis adapted the code provided in the [quickstart](https://github.com/n
 #### GMRT
 [Global multi-resolution topography (GMRT)](Global Multi-Resolution Topography (GMRT)) can provided coverage for areas that do not exist by BlueTopo bathymetry. These data can get accessed through a [toolkit](https://www.gmrt.org/GMRTMapTool/) and also through [web services](https://www.gmrt.org/services/index.php). This analysis relied on the web-services to automatically generate the data based on coordinates and other criteria; this is possible by constructing the URL for downloading the data. To learn more about how to construct an URL for data download, one option is [here](https://www.gmrt.org/services/gridserverinfo.php#!/services/getGMRTGrid).
 
-### 3. Bathymetry combination
+### 4. Bathymetry combination
 #### BlueTopo
-BlueTopo got delineated into three different resolutions: 4m, 8m, and 16m. Due to the geographic orientation of the US Caribbean, it straddles two different UTM zones (19N and 20N). When these data
-got obtained through the Python bluetopo package, they arrived as tiles for the UTM zones within they exist. 
+BlueTopo data existed at three different resolutions: 4m, 8m, and 16m. When the BlueTopo data got obtained through the Python bluetopo 
+package, they arrived as tiles for the UTM zones within they exist. A tessellation grid provided guidance on which tiles corresponded 
+to a particular resolution. Due to the geographic orientation of the US Caribbean, it straddles two different UTM zones (19N and 20N).
+
+When combining the 4m with the 8m resolutions, the 4m had to get aggregated to match the same resolution. By aggregating by a factor of 2
+(4 x 2), the 4m resolution dataset got rearranged to have a new resolution of 8m. A similar process got undertaken to have the 4m and 8m 
+resolutions to match the 16m to form the complete BlueTopo coverage.
 
 After BlueTopo Tiles got combined for each UTM zone in R, they get combined in ArcGIS Pro to reduce artifacts and errors that R produces.
 
 1.) Mosaic to New Raster (UTM19N + UTM20N, output coordinate reference system = WGS84)
 
 #### GMRT
-ArcGIS tool new mosaic to raster that combines the GMRT data and the 16m resolution data to form a complete raster. The resolution output was the same as the x-cell size (5.49372231074078E-04). When values overlap, the first raster got elected for filling in the value (the 16m-resolution combined raster formed by BlueTopo tiles). Given that the These data got masked to only the EEZ
+After downloading the GMRT data with a particular area of interest, it had to get combined with the 16m-resolution BlueTopo data. These two rasters got 
+transformed into a complete coverage of the eez by relying on BlueTopo data when both datasets provide data and GMRT data for all other locations. To 
+accomplish this, the first raster got elected for filling in the value (the 16m-resolution combined raster formed by BlueTopo tiles). The resolution 
+output was the same as the x-cell size (5.49372231074078E-04) of GMRT data since it has the less fine resolution. While BlueTopo focuses on bathymetry,
+GMRT coverages topography as well. Any positive values (elevation above water line) got set to NULL. The EEZ then acted as a mask to limit only bathymetry
+data to the US Caribbean EEZ.
 
 1. [Mosaic to New Raster](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/mosaic-to-new-raster.htm) (BlueTopo combined + GMRT, GMRT for cell size, BlueTopo for overlapping values)
 2. [Set Null](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/set-null.htm) (values greater than or equal to 0 get NULL value)
 3. [Extract by Mask](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/extract-by-mask.htm) (full EEZ acts as mask)
 
-#### Notes
-There remain some artefacts due to how the BlueTopo data got created and combined. There exist slits of no data between a few tiles.
+### 5. Notes
+There remain some artefacts due to how the BlueTopo data originally got created and combined. There exist slits of no data between a few tiles. With more time and computing, it is possible to fill in those gaps with extrapolation methods.
 
-#### Contacts
+### 6. Contacts
 For questions concerning the creation of these data, contact [Brian Free](mailto:brian.free@gmail.com).
 [Tashi Geleg](mailto:phuntsok.geleg@noaa.gov) can assist with any questions about how to access, download, and generally interact with BlueTopo data.
