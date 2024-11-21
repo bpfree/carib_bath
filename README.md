@@ -74,7 +74,7 @@ resolutions to match the 16m to form the complete BlueTopo coverage.
 
 After BlueTopo Tiles got combined for each UTM zone in R, they get combined in ArcGIS Pro to reduce artifacts and errors that R produces.
 
-1.) Mosaic to New Raster (UTM19N + UTM20N, output coordinate reference system = WGS84)
+1.) [Mosaic to New Raster](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/mosaic-to-new-raster.htm) (UTM19N + UTM20N, output coordinate reference system = WGS84)
 
 #### GMRT
 After downloading the GMRT data with a particular area of interest, it had to get combined with the 16m-resolution BlueTopo data. These two rasters got 
