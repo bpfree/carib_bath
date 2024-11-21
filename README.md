@@ -60,7 +60,7 @@ A helpful way to visually inspect the data is at this [map viewer](https://nowco
 This analysis adapted the code provided in the [quickstart](https://github.com/noaa-ocs-hydrography/BlueTopo?tab=readme-ov-file#quickstart) to obtain the BlueTopo tiles for only the US Caribbean.
 
 #### GMRT
-[Global multi-resolution topography (GMRT)](Global Multi-Resolution Topography (GMRT)) can provided coverage for areas that do not exist by BlueTopo bathymetry. These data can get accessed through a [toolkit](https://www.gmrt.org/GMRTMapTool/) and also through [web services](https://www.gmrt.org/services/index.php). This analysis relied on the web-services to automatically generate the data based on coordinates and other criteria; this is possible by constructing the URL for downloading the data. To learn more about how to construct an URL for data download, one option is [here](https://www.gmrt.org/services/gridserverinfo.php#!/services/getGMRTGrid).
+[Global multi-resolution topography (GMRT)](https://www.gmrt.org/) can provided coverage for areas that do not exist by BlueTopo bathymetry. These data can get accessed through a [toolkit](https://www.gmrt.org/GMRTMapTool/) and also through [web services](https://www.gmrt.org/services/index.php). This analysis relied on the web-services to automatically generate the data based on coordinates and other criteria; this is possible by constructing the URL for downloading the data. To learn more about how to construct an URL for data download, one option is [here](https://www.gmrt.org/services/gridserverinfo.php#!/services/getGMRTGrid).
 
 ### 4. Bathymetry combination
 #### BlueTopo
