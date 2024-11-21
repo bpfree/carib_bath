@@ -4,6 +4,9 @@ NOAA's BlueTopo and the Global multi-resolution topography datasets.
 
 ## Methods
 ### 1. Software
+This analysis relied on the combination of R and ArcGIS Pro for the data acquisition and transformation. ArcGIS Pro 3.3.1 provided the best methods to combine the bathymetry data to reduce artefacts and errors.
+Below details the system and packages relied upon for the R portions of the analysis.
+
 ```
 R version 4.4.0 (2024-04-24)
 Platform: aarch64-apple-darwin20
