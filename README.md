@@ -92,8 +92,10 @@ data to the US Caribbean EEZ.
 There remain some artefacts due to how the BlueTopo data originally got created and combined. There exist slits of no data between a few tiles. With more time and computing, it is possible to fill in those gaps with extrapolation methods.
 
 ### 6. Contacts
-*Aquaculture leader: Chris Schillaci
-*Project lead: Drew Resnick
+-NOAA Caribbean leader: [Laughlin Siceloff](mailto:laughlin.siceloff@noaa.gov)
+-Offshore Wind (Caribbean) liaison: [Jennifer Au](mailto:jennifer.au@noaa.gov)
+-Data analysts: [Matthew Poti](mailto:matthew.poti@noaa.gov) and [Steven Lombardo](mailto:steven.lombardo@noaa.gov)
 
-For questions concerning the creation of these data, contact [Brian Free](mailto:brian.free@gmail.com).
+For questions concerning the creation of these data and code, contact [Brian Free](mailto:brian.free@gmail.com).
+
 [Tashi Geleg](mailto:phuntsok.geleg@noaa.gov) can assist with any questions about how to access, download, and generally interact with BlueTopo data.
