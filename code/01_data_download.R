@@ -109,14 +109,13 @@ data_dir <- "data/a_exploratory_data"
 download_list <- c(
   
   ## US maritime limits and boundaries (source: https://maritimeboundaries.noaa.gov/downloads/USMaritimeLimitsAndBoundariesSHP.zip)
-  ### 
-  ### metadata: 
+  ### homepage: https://nauticalcharts.noaa.gov/data/us-maritime-limits-and-boundaries.html
+  ### metadata: https://www.fisheries.noaa.gov/inport/item/39963
   
   "https://maritimeboundaries.noaa.gov/downloads/USMaritimeLimitsAndBoundariesSHP.zip",
   
-  ## anchorage areas (source: https://marinecadastre.gov/downloads/data/mc/FederalStateWaters.zip)
-  ### MarineCadastre: 
-  ### metadata: 
+  ## federal and state waters (source: https://marinecadastre.gov/downloads/data/mc/FederalStateWaters.zip)
+  ### metadata: https://www.fisheries.noaa.gov/inport/item/54383
   
   "https://marinecadastre.gov/downloads/data/mc/FederalStateWaters.zip"
 )
