@@ -45,7 +45,7 @@ loaded via a namespace (and not attached):
 ```
 
 ### 2. Coordinate reference system
-After discussions on which coordinate reference system to procede, it was chosen that WGS84 (EPSG:4326) would minimize any area differences across the US Caribbean EEZ. BlueTopo data come in both the UTM19N and UTM20N zones, while the GMRT data are in WGS84.
+After discussions on which coordinate reference system to procede, it was chosen that [WGS84 (EPSG:4326)](https://epsg.io/4326) would minimize any area differences across the US Caribbean EEZ. BlueTopo data come in both the UTM19N and UTM20N zones, while the GMRT data are in WGS84.
 
 ### 3. Data sources
 #### EEZ
