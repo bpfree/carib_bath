@@ -74,11 +74,11 @@ resolutions to match the 16m to form the complete BlueTopo coverage.
 
 After BlueTopo Tiles got combined for each UTM zone in R, they get combined in ArcGIS Pro to reduce artifacts and errors that R produces.
 
-1.) [Mosaic to New Raster](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/mosaic-to-new-raster.htm) (UTM19N + UTM20N, output coordinate reference system = WGS84)
+1. [Mosaic to New Raster](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/mosaic-to-new-raster.htm) (UTM19N + UTM20N, output coordinate reference system = WGS84)
 
 #### GMRT
 After downloading the GMRT data with a particular area of interest, it had to get combined with the 16m-resolution BlueTopo data. These two rasters got 
-transformed into a complete coverage of the eez by relying on BlueTopo data when both datasets provide data and GMRT data for all other locations. To 
+transformed into a complete coverage of the EEZ by relying on BlueTopo data when both datasets provide data and GMRT data for all other locations. To 
 accomplish this, the first raster got elected for filling in the value (the 16m-resolution combined raster formed by BlueTopo tiles). The resolution 
 output was the same as the x-cell size (5.49372231074078E-04) of GMRT data since it has the less fine resolution. While BlueTopo focuses on bathymetry,
 GMRT coverages topography as well. Any positive values (elevation above water line) got set to NULL. The EEZ then acted as a mask to limit only bathymetry
