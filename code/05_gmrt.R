@@ -74,7 +74,7 @@ bluetopo <- terra::rast(x = file.path(raster_dir, stringr::str_glue("{region_nam
 plot(bluetopo)
 
 boundary <- sf::st_read(dsn = eez_dir,
-                        layer = sf::st_layers(dsn = eez_dir)[1][[grep(pattern = "eez",
+                        layer = sf::st_layers(dsn = eez_dir)[[1]][[grep(pattern = "eez",
                                                                       x = sf::st_layers(dsn = eez_dir)[[1]])]]) %>%
   sf::st_transform(x = .,
                    crs = crs)
