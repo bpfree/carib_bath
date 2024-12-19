@@ -96,6 +96,6 @@ There remain some artefacts due to how the BlueTopo data originally got created 
 - Data analysts: [Matthew Poti](mailto:matthew.poti@noaa.gov) and [Steven Lombardo](mailto:steven.lombardo@noaa.gov)
 - Caribbean Offshore Wind liaison: [Jennifer Au](mailto:jennifer.au@noaa.gov)
 
-For questions concerning the creation of these data and code, contact [Brian Free](mailto:brian.free@gmail.com).
+For questions concerning the creation of these data and code, contact [Brian Free](mailto:brian.free@noaa.com).
 
 [Tashi Geleg](mailto:phuntsok.geleg@noaa.gov) can assist with any questions about how to access, download, and generally interact with BlueTopo data.
